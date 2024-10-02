@@ -5,7 +5,7 @@ public class Warunks {
         double jeruk, kg, uang, total, kembalian;
         Scanner isian = new Scanner(System.in);
 
-        jeruk = 24000;
+        jeruk = 28000;
 
         System.out.print("Masukan jumlah jeruk yang dibeli (KG) : ");
         kg = isian.nextDouble();
