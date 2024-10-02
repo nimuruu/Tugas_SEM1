@@ -19,6 +19,9 @@ public class Warunks {
         System.out.println("Total yang harus dibayar : " + total);
         System.out.println("Uang yang diberirkan : " + uang);
         System.out.println("Uang kembalian : " + kembalian);
+
+        isian.close();
+
     }
     
 }
