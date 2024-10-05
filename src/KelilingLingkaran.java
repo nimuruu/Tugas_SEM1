@@ -11,7 +11,7 @@ public class KelilingLingkaran {
 
         keliling = 2 * Math.PI * Jari_jari;
 
-        System.out.printf("Keliling lingkaran dengan jari-jari %.2f adalah: %.2f%n", Jari_jari, keliling);
+        System.out.printf("Keliling lingkaran dengan jari-jari" + Jari_jari + " adalah : " + keliling);
 
         scanner.close();
 
