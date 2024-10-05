@@ -7,7 +7,7 @@ public class KeteranganLulus {
         System.out.print("Masukan nilai murid : ");
         int nilai = scanner.nextInt();
 
-        if (nilai >= 70) {
+        if (nilai >= 75) {
             System.out.print("Nilai : " + nilai + ", Maka murid LULUS");
         }
 
