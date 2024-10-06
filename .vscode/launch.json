@@ -1,0 +1,77 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Farentheit",
+            "request": "launch",
+            "mainClass": "Farentheit",
+            "projectName": "test_70f09310"
+        },
+        {
+            "type": "java",
+            "name": "GanjilGenap",
+            "request": "launch",
+            "mainClass": "GanjilGenap",
+            "projectName": "test_70f09310"
+        },
+        {
+            "type": "java",
+            "name": "KelilingLingkaran",
+            "request": "launch",
+            "mainClass": "KelilingLingkaran",
+            "projectName": "test_70f09310"
+        },
+        {
+            "type": "java",
+            "name": "KeteranganLulus",
+            "request": "launch",
+            "mainClass": "KeteranganLulus",
+            "projectName": "test_70f09310"
+        },
+        {
+            "type": "java",
+            "name": "KonversiNilai",
+            "request": "launch",
+            "mainClass": "KonversiNilai",
+            "projectName": "test_70f09310"
+        },
+        {
+            "type": "java",
+            "name": "LuasPersegi",
+            "request": "launch",
+            "mainClass": "LuasPersegi",
+            "projectName": "test_70f09310"
+        },
+        {
+            "type": "java",
+            "name": "Telor",
+            "request": "launch",
+            "mainClass": "Telor",
+            "projectName": "test_70f09310"
+        },
+        {
+            "type": "java",
+            "name": "VolumeKubus",
+            "request": "launch",
+            "mainClass": "VolumeKubus",
+            "projectName": "test_70f09310"
+        },
+        {
+            "type": "java",
+            "name": "Warunks",
+            "request": "launch",
+            "mainClass": "Warunks",
+            "projectName": "test_70f09310"
+        }
+    ]
+}
