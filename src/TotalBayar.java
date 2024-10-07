@@ -13,7 +13,8 @@ public class TotalBayar {
             System.out.print("Bayaran anda adalah : " + bayar + ", dapat diskon 10rb = " + total);
         }
         else {
-            System.out.print("Total belanja anda adalah : " + bayar);
+            total = bayar-2000; 
+            System.out.print("Bayaran anda adalah : " + bayar + ", dapat diskon 2rb = " + total);
         }
 
         scanner.close();
