@@ -14,9 +14,8 @@ public class Tugas4 {
 
         if (telur >= 3) {
             diskon = jumlah * 0.1;      
-        }
-        else {
-            diskon = jumlah;
+        }else {
+            diskon = 0.0;
         }
 
         kembalian = jumlah - diskon;
@@ -26,7 +25,6 @@ public class Tugas4 {
         System.out.println("Diskon : " + diskon);
         System.out.println("Uang yang harus dibayar : " + jumlah);
         System.out.println("Uang kembalian : " + kembalian);
-
 
         scanner.close();
     }
