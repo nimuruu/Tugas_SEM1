@@ -1,3 +1,5 @@
+package Minggu3;
+
 import java.util.Scanner;
 
 public class Tugas3 {
