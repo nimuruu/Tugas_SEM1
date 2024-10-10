@@ -21,20 +21,20 @@ public class Latihan4 {
             || (TTinggal.equals("New York")) 
             || (TTinggal.equals("Havana")) 
             && (uang >= 10000000)) {
-            System.out.println(nama + " kemungkinan adalah seorang anggota mafia dengan Don.");
+            System.out.println(nama + " kemungkinan adalah seorang anggota Mafia dengan Don.");
 
         } else if (umur >= 25 && umur <= 40 && (TTinggal.equals("New Jersey") 
             || (TTinggal.equals("Manhattan")) 
             || (TTinggal.equals("Nevada")) 
             && (uang >= 1000000) && (uang <= 2000000))) {
-            System.out.println(nama + " kemungkinan adalah seorang anggota mafia dengan Underboss.");
+            System.out.println(nama + " kemungkinan adalah seorang anggota Mafia dengan Underboss.");
 
         } else if (umur >= 18 && umur <= 24 && (TTinggal.equals("California") 
-        || (TTinggal.equals("Detroit")) 
-        || (TTinggal.equals("Boston")) 
-        && (uang < 1000000))) {
-            System.out.println(nama + " kemungkinan adalah seorang anggota mafia dengan Capo.");
-            
+            || (TTinggal.equals("Detroit")) 
+            || (TTinggal.equals("Boston")) 
+            && (uang < 1000000))) {
+            System.out.println(nama + " kemungkinan adalah seorang anggota Mafia dengan Capo.");
+
         } else {
             System.out.println(nama + " tidak mencurigakan.");
         }
