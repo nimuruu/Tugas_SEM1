@@ -6,11 +6,12 @@ public class Tugas3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String mahasiswa[] = new String[10];
-        int nilai[] = new int[10];
+        String mahasiswa[] = new String[100];
+        int nilai[] = new int[100];
+        String keterangan[] = new String[100];
         String inputlagi = "y";
         int i = 0;
-        String keterangan;
+
 
         do {
             System.out.print("Masukan nama : ");
@@ -19,9 +20,9 @@ public class Tugas3 {
             nilai[i] = scanner.nextInt();
 
             if (nilai[i] >= 70){
-                keterangan = "LULUS";
+                keterangan[i] = "LULUS";
             } else {
-                keterangan = "GAGAL";
+                keterangan[i] = "GAGAL";
             }
             scanner.nextLine();
 
@@ -33,7 +34,14 @@ public class Tugas3 {
         System.out.println("Daftar Mahasiswa");
         System.out.println("NO\tNAMA\tNILAI\tKETERANGAN");
 
-        
+        for (int j = 0; j < mahasiswa.length; j++) {
+            if (mahasiswa[j] == null) {
+                break;
+            }
+            System.out.println((j+1) + "\t" + mahasiswa[j] + "\t" + nilai[j] + "\t" + keterangan[j]);
+        }
+
+
 
         scanner.close();
     }
