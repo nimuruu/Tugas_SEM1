@@ -33,5 +33,6 @@ public class GajiLembur {
         System.out.println("Upah Lembur : " + UpahLembur + " (Jika lembur > 4 jam, maka kelebihannya X 2)");
         System.out.println("Total gaji anda : " + totalgaji);
 
+        scanner.close();
     }
 }
