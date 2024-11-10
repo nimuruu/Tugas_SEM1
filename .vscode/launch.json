@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GajiLembur",
+            "request": "launch",
+            "mainClass": "LatihanUTS.GajiLembur",
+            "projectName": "test_70f09310"
+        },
+        {
+            "type": "java",
             "name": "Tugas5",
             "request": "launch",
             "mainClass": "Minggu4.Tugas5",
