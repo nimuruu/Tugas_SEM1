@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Tugas5",
+            "request": "launch",
+            "mainClass": "Minggu4.Tugas5",
+            "projectName": "Tugas_SEM1_4bf29c0"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
