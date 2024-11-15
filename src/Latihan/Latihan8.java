@@ -65,10 +65,10 @@ public class Latihan8 {
 
         } while (inputlagi.equals("y"));
 
-        System.out.println("-".repeat(50));
+        System.out.println("-".repeat(80));
         System.out.println("Nama : " + nama);
         System.out.println("Semester : " + semester);
-        System.out.println("-".repeat(50));
+        System.out.println("-".repeat(80));
 
         //System.out.printf("%-5s %15s %10s %-20s %-10s %10s%n","No.","Mata Kuliah", "SKS","Nilai", "Convert");
         System.out.printf("%-5s %-25s %-10s %-10s %-15s\n", "No", "Mata Kuliah", "SKS", "Nilai", "Nilai (Convert)");
@@ -97,7 +97,7 @@ public class Latihan8 {
             
         }
         
-        System.out.println("-".repeat(50));
+        System.out.println("-".repeat(80));
         System.out.println("Total SKS : " + totalNilaiMataKuliahSKS);
         System.out.println("Rata - rata : "+ rata2);
 
