@@ -23,7 +23,7 @@ public class NO_2 {
     double bobot =0.0;
     String mutu= "E";
 
-    //INPUT
+    //INPUT LOOP
         do { 
             System.out.print("Mata Kuliah: ");
             String mataKuliah = sc.nextLine();

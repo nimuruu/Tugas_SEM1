@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Latihan8",
+            "request": "launch",
+            "mainClass": "Latihan.Latihan8",
+            "projectName": "test_70f09310"
+        },
+        {
+            "type": "java",
+            "name": "NO_2REVISI",
+            "request": "launch",
+            "mainClass": "SoalEssay.NO_2REVISI",
+            "projectName": "test_70f09310"
+        },
+        {
+            "type": "java",
             "name": "GajiLembur",
             "request": "launch",
             "mainClass": "LatihanUTS.GajiLembur",
