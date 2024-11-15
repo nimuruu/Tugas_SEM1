@@ -69,6 +69,9 @@ public class Latihan8 {
         System.out.println("Nama : " + nama);
         System.out.println("Semester : " + semester);
         System.out.println("-".repeat(50));
+
+        //System.out.printf("%-5s %15s %10s %-20s %-10s %10s%n","No.","Mata Kuliah", "SKS","Nilai", "Convert");
+        System.out.printf("%-5s %-25s %-10s %-10s %-15s\n", "No", "Mata Kuliah", "SKS", "Nilai", "Nilai (Convert)");
         
         for (int i = 0; i < matkul.size(); i++) {
             String mataKuliah = matkul.get(i);
@@ -83,15 +86,22 @@ public class Latihan8 {
 
             rata2 = totalNilai / totalNilaiMataKuliahSKS;
 
+            /*
             System.out.println("Mata Kuliah \t: " + mataKuliah);
             System.out.println("SKS \t\t: " + matkulSks);
             System.out.println("Nilai \t\t: " + matkulNilai);
             System.out.println("Nilai (Convert) :"+ "(" + matkulNilai + ") = " + matkulNilaiKONV);
-            System.out.println("-".repeat(50));
+            */
+            
+            System.out.printf("%-5d %-25s %-10d %-10s %-15d\n", (i + 1), mataKuliah, matkulSks, matkulNilai, matkulNilaiKONV);
+            
         }
-
+        
+        System.out.println("-".repeat(50));
         System.out.println("Total SKS : " + totalNilaiMataKuliahSKS);
-        System.out.print("Rata - rata : " + String.format("%.2f", rata2));
+        System.out.println("Rata - rata : "+ rata2);
+
+        //System.out.print("Rata - rata : " + String.format("%.2f", rata2));
         
         sc.close();
     }
