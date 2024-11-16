@@ -1,131 +1,107 @@
 package SoalEssay;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
-
-class MataKuliah {
-    String namaMataKuliah;
-    int sks;
-    char nilai;
-    int bobot;
-
-   
-    public MataKuliah(String namaMataKuliah, int sks, char nilai) {
-        this.namaMataKuliah = namaMataKuliah;
-        this.sks = sks;
-        this.nilai = nilai;
-        this.bobot = konversiNilai(nilai); 
-    }
-
-   
-    private int konversiNilai(char nilai) {
-        switch (nilai) {
-            case 'A': 
-                return 4;
-            case 'B': 
-                return 3;
-            case 'C': 
-                return 2;
-            case 'D': 
-                return 1;
-            case 'E': 
-                return 0;
-            default: 
-                return 0;
-        }
-    }
-}
 
 public class NO_2REVISI {
     public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-       
-         
-        List<MataKuliah> mataKuliahList = new ArrayList<>();
-        mataKuliahList.add(new MataKuliah("Algoritma", 3, 'A'));
-        mataKuliahList.add(new MataKuliah("Struktur Data", 2, 'B'));
-        mataKuliahList.add(new MataKuliah("Basis Data", 3, 'A'));
-        mataKuliahList.add(new MataKuliah("Pemrograman", 2, 'C'));
-        
-
-        double nilaiNOMBER = 0.0;
-        String inputlagi;
-
         
         ArrayList<String> matkul = new ArrayList<>();
         ArrayList<Integer> sks = new ArrayList<>();
         ArrayList<String> nilai = new ArrayList<>();
+        ArrayList<Integer> konvert = new ArrayList<>();
+
+        Scanner sc = new Scanner(System.in);
+
+        String inputlagi;
+        int inputNilaiKONV = 0;
+        int totalNilai = 0;
+        int totalNilaiMataKuliahSKS = 0;
+        double rata2 = 0.0;
         
 
-        System.out.print("Masukan Nama : ");
+        System.out.print("Masukan nama : ");
         String nama = sc.nextLine();
         System.out.print("Semester : ");
         int semester = sc.nextInt();
-        /* 
+        sc.nextLine();
+
         do {
-            System.out.print("Mata kuliah : ");
+            System.out.print("Mata Kuliah : ");
             String inputMatkul = sc.nextLine();
+            matkul.add(inputMatkul);
+            
             System.out.print("SKS : ");
             int inputSKS = sc.nextInt();
+            sks.add(inputSKS);
             sc.nextLine();
-            
-            while (true) {
-                System.out.print("Nilai (A-E): ");
-                String inputNilai = sc.nextLine().toUpperCase();
-                
-            if (inputNilai.equals("E")) {
-                nilaiNOMBER = 0.0;
-                break;
-            } else if (inputNilai.equals("D")) {
-                nilaiNOMBER = 1.0;
-                break;
-            } else if (inputNilai.equals("C")) {
-                nilaiNOMBER = 2.0;
-                break;
+
+            System.out.print("Nilai (A-E) : ");
+            String inputNilai = sc.nextLine();
+            nilai.add(inputNilai);
+            if (inputNilai.equals("A")) {
+                inputNilaiKONV = 4;
+                konvert.add(inputNilaiKONV);
             } else if (inputNilai.equals("B")) {
-                nilaiNOMBER = 3.0;
-                break;
-            } else if (inputNilai.equals("A")) {
-                nilaiNOMBER = 4.0;
-                break;
+                inputNilaiKONV = 3;
+                konvert.add(inputNilaiKONV);
+            } else if (inputNilai.equals("C")) {
+                inputNilaiKONV = 2;
+                konvert.add(inputNilaiKONV);
+            } else if (inputNilai.equals("D")) {
+                inputNilaiKONV = 1;
+                konvert.add(inputNilaiKONV);
+            } else if (inputNilai.equals("E")) {
+                inputNilaiKONV = 0;
+                konvert.add(inputNilaiKONV);
             } else {
-                System.out.print("Masukan Nilai yang benar! (A-E)");
+                System.out.println("Masukan Nilai yang benar! (A-E)");
             }
             
-            matkul.add(inputMatkul);
-            sks.add(inputSKS);
-            nilai.add(inputNilai);
-        }
+            //konvert.add(inputNilaiKONV);
 
             System.out.print("Masukkan data lagi? (y/n): ");
             inputlagi = sc.nextLine().toLowerCase();
-            
-        } while (inputlagi.equals("y"));
-        */
 
-        System.out.println("-".repeat(50));
+        } while (inputlagi.equals("y"));
+
+        System.out.println("-".repeat(80));
         System.out.println("Nama : " + nama);
         System.out.println("Semester : " + semester);
+        System.out.println("-".repeat(80));
 
-        System.out.println("=".repeat(50));
-        System.out.println("Mata Kuliah\tSKS\tNilai\tBobot");
-        int totalSks = 0;
-        int totalBobot = 0;
-
-        for (MataKuliah mk : mataKuliahList) {
-            System.out.println(mk.namaMataKuliah + "\t" + mk.sks + "\t" + mk.nilai + "\t" + mk.bobot);
-            totalSks += mk.sks;
-            totalBobot += mk.sks * mk.bobot;  
-        }
-        System.out.print("=".repeat(50));
+        //System.out.printf("%-5s %15s %10s %-20s %-10s %10s%n","No.","Mata Kuliah", "SKS","Nilai", "Convert");
+        System.out.printf("%-5s %-25s %-10s %-10s %-15s\n", "No", "Mata Kuliah", "SKS", "Nilai", "Convert");
         
-        double nilaiRataRata = (double) totalBobot / totalSks;
+        for (int i = 0; i < matkul.size(); i++) {
+            String mataKuliah = matkul.get(i);
+            int matkulSks = sks.get(i);
+            String matkulNilai = nilai.get(i);
+            int matkulNilaiKONV = konvert.get(i);
+            
+            totalNilaiMataKuliahSKS += matkulSks;
 
-       
-        System.out.println("\nTotal SKS yang diambil: " + totalSks);
-        System.out.println("Nilai rata-rata: " + nilaiRataRata);
+            int totalNilaiMataKuliah = matkulNilaiKONV * matkulSks;
+            totalNilai += totalNilaiMataKuliah;
+
+            rata2 = totalNilai / totalNilaiMataKuliahSKS;
+
+            /*
+            System.out.println("Mata Kuliah \t: " + mataKuliah);
+            System.out.println("SKS \t\t: " + matkulSks);
+            System.out.println("Nilai \t\t: " + matkulNilai);
+            System.out.println("Nilai (Convert) :"+ "(" + matkulNilai + ") = " + matkulNilaiKONV);
+            */
+            
+            System.out.printf("%-5d %-25s %-10d %-10s %-15d\n", (i + 1), mataKuliah, matkulSks, matkulNilai, matkulNilaiKONV);
+            
+        }
+        
+        System.out.println("-".repeat(80));
+        System.out.println("Total SKS : " + totalNilaiMataKuliahSKS);
+        System.out.println("Rata - rata : "+ rata2);
+
+        //System.out.print("Rata - rata : " + String.format("%.2f", rata2));
         
         sc.close();
     }
