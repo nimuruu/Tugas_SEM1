@@ -71,7 +71,7 @@ public class Latihan8 {
         System.out.println("-".repeat(80));
 
         //System.out.printf("%-5s %15s %10s %-20s %-10s %10s%n","No.","Mata Kuliah", "SKS","Nilai", "Convert");
-        System.out.printf("%-5s %-25s %-10s %-10s %-15s\n", "No", "Mata Kuliah", "SKS", "Nilai", "Nilai (Convert)");
+        System.out.printf("%-5s %-25s %-10s %-10s %-15s\n", "No", "Mata Kuliah", "SKS", "Nilai", "Convert");
         
         for (int i = 0; i < matkul.size(); i++) {
             String mataKuliah = matkul.get(i);
