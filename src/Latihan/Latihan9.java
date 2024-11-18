@@ -51,7 +51,7 @@ public class Latihan9 {
 
         public static void hapusElement() {
 
-            System.out.println("Masukan nama yang ingin dihapus : ");
+            System.out.print("Masukan nama yang ingin dihapus : ");
             String inputnama2 = sc.nextLine();
 
             if (nama.remove(inputnama2)) {
@@ -96,3 +96,4 @@ public class Latihan9 {
         }
     }
 }
+    
