@@ -14,7 +14,6 @@ public class Latihan9 {
             int pilihan;
 
             do {
-
                 System.out.println("\n=== Menu Utama ===");
                 System.out.println("1. Tambah nama");
                 System.out.println("2. Hapus Nama");
@@ -33,24 +32,20 @@ public class Latihan9 {
                     case 5 -> System.out.println("Keluar dari program.");
                     default -> System.out.println("Opsi tidak valid. Coba lagi.");
                 }
-
             } while (pilihan != 5);
 
         }
 
         public static void tambahElement() {
-
             System.out.print("Masukan nama : ");
             String inputnama = sc.nextLine();
             nama.add(inputnama);
 
             System.out.println("Nama berhasil ditambah!");
             sc.nextLine();
-
         }
 
         public static void hapusElement() {
-
             System.out.print("Masukan nama yang ingin dihapus : ");
             String inputnama2 = sc.nextLine();
 
@@ -61,11 +56,9 @@ public class Latihan9 {
                 System.out.println("Nama tidak ada!");
                 sc.nextLine();
             }
-
         }
 
         public static void cariElement() {
-
             System.out.print("Masukkan nama yang ingin dicari: ");
             String intputnama3 = sc.nextLine();
             int index = nama.indexOf(intputnama3);
@@ -77,11 +70,9 @@ public class Latihan9 {
                 System.out.println("Nama tidak ditemukan!");
                 sc.nextLine();
             }
-
         }
 
         public static void tunjukanElements() {
-
             if (nama.isEmpty()) {
                 System.out.println("Daftar nama kosong.");
                 sc.nextLine();
@@ -92,8 +83,8 @@ public class Latihan9 {
                 }
                 sc.nextLine();
             }
-
         }
+        
     }
 }
     
